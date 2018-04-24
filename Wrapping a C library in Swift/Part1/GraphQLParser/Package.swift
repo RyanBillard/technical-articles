@@ -11,14 +11,11 @@ let package = Package(
             targets: ["GraphQLParser"]),
     ],
     dependencies: [
-        .package(url: "../Clibgraphqlparser", from: "0.3.2"),
+        .package(url: "../Clibgraphqlparser", from: "1.0.0"),
     ],
     targets: [
         .target(
             name: "GraphQLParser",
             dependencies: ["Clibgraphqlparser"]),
-        .testTarget(
-            name: "GraphQLParserTests",
-            dependencies: ["GraphQLParser"]),
     ]
 )
